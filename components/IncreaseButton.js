@@ -24,10 +24,7 @@ export default class IncreaseButton extends Component {
     
 // })
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         add: (amount) => dispatch({ type: action.ADD, payload: amount })
-//     }
+// const mapDispatchToProps = {
 // }
 
 // export default connect(mapStateToProps, mapDispatchToProps)(IncreaseButton)

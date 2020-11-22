@@ -22,7 +22,7 @@ export default class CounterNumber extends Component {
 }
 
 // const mapStateToProps = (state) => ({
-//     count: state.count
+    
 // })
 
 // const mapDispatchToProps = {
