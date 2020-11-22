@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
-export class CounterNumber extends Component {
+export default class CounterNumber extends Component {
     static propTypes = {
         count: PropTypes.number
     }
@@ -21,12 +21,12 @@ export class CounterNumber extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
-    count: state.count
-})
+// const mapStateToProps = (state) => ({
+//     count: state.count
+// })
 
-const mapDispatchToProps = {
+// const mapDispatchToProps = {
     
-}
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CounterNumber)
+// export default connect(mapStateToProps, mapDispatchToProps)(CounterNumber)

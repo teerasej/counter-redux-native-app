@@ -4,20 +4,17 @@ import { StyleSheet, Text, View } from 'react-native';
 import CounterNumber from './components/CounterNumber';
 import IncreaseButton from './components/IncreaseButton';
 
-import { Provider } from 'react-redux';
-import configureStore from "./redux/store";
 
-const store = configureStore();
 
 export default function App() {
   return (
-    <Provider store={store}>
+    
       <View style={styles.container}>
         <CounterNumber />
         <IncreaseButton />
         <StatusBar style="auto" />
       </View>
-    </Provider>
+    
   );
 }
 

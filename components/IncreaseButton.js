@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import action from '../redux/action'
 
-export class IncreaseButton extends Component {
+export default class IncreaseButton extends Component {
     
     increase = () => {
-        this.props.add(1);
+        
     }
 
 
@@ -20,14 +20,14 @@ export class IncreaseButton extends Component {
     }
 }
 
-const mapStateToProps = (state) => ({
+// const mapStateToProps = (state) => ({
     
-})
+// })
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        add: (amount) => dispatch({ type: action.ADD, payload: amount })
-    }
-}
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         add: (amount) => dispatch({ type: action.ADD, payload: amount })
+//     }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(IncreaseButton)
+// export default connect(mapStateToProps, mapDispatchToProps)(IncreaseButton)
